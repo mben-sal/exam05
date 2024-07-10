@@ -1,5 +1,4 @@
-#ifndef POLYMORPH_HPP
-#define POLYMORPH_HPP
+#pragma once
 
 #include <iostream>
 #include "ASpell.hpp"
@@ -12,4 +11,3 @@ class   Polymorph : public ASpell
         virtual Polymorph *clone() const;
 };
 
-#endif

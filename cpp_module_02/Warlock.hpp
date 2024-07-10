@@ -1,5 +1,4 @@
-#ifndef WARLOCK_HPP
-#define WARLOCK_HPP
+#pragma once
 
 #include <iostream>
 #include <map>
@@ -14,15 +13,13 @@ class   Warlock
         std::string _title;
         SpellBook   sbook;
     public:
-        Warlock(std::string name, std::string title);
+        Warlock(std::string const &name, std::string const &title);
         ~Warlock();
-        const   std::string &getName() const;
-        const   std::string &getTitle() const;
+       	std::string const &getName() const;
+        std::string const &getTitle() const;
         void    setTitle(const std::string &title);
         void    introduce() const;
         void    learnSpell(ASpell *obj);
         void    forgetSpell(std::string name);
-        void    launchSpell(std::string name, ATarget &obj);
+        void    launchSpell(std::string name, ATarget const &obj);
 };
-
-#endif

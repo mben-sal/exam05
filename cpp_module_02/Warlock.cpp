@@ -1,6 +1,6 @@
 #include "Warlock.hpp"
 
-Warlock::Warlock(std::string name, std::string title)
+Warlock::Warlock(std::string const &name, std::string const &title)
 {
     _name = name;
     _title = title;
@@ -12,12 +12,12 @@ Warlock::~Warlock()
     std::cout << _name << ": My job here is done!\n";
 }
 
-const std::string &Warlock::getName() const
+std::string const &Warlock::getName() const
 {
     return (_name);
 }
 
-const std::string &Warlock::getTitle() const
+std::string const &Warlock::getTitle() const
 {
     return (_title);
 }
@@ -42,7 +42,7 @@ void    Warlock::forgetSpell(std::string name)
     sbook.forgetSpell(name);
 }
 
-void    Warlock::launchSpell(std::string name, ATarget &obj)
+void    Warlock::launchSpell(std::string name, ATarget const &obj)
 {
     ASpell *tmp = sbook.createSpell(name);
     if (tmp)

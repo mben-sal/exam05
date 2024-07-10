@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mben-sal/Desktop/42_ExamRanks-main/ExamRank-05/cpp_module_01",
-      "program": "/Users/mben-sal/Desktop/42_ExamRanks-main/ExamRank-05/cpp_module_01/build/Debug/outDebug"
+      "cwd": "/Users/mben-sal/Desktop/ExamRank05/cpp_module_01",
+      "program": "/Users/mben-sal/Desktop/ExamRank05/cpp_module_01/build/Debug/outDebug"
     }
   ]
 }

@@ -1,6 +1,4 @@
-#ifndef TARGETGENERATOR_HPP
-#define TARGETGENERATOR_HPP
-
+#pragma once
 #include <iostream>
 #include <map>
 #include "ATarget.hpp"
@@ -16,5 +14,3 @@ class   TargetGenerator
         void forgetTargetType(std::string const &obj);
         ATarget* createTarget(std::string const &obj);
 };
-
-#endif

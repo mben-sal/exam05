@@ -1,5 +1,4 @@
-#ifndef FWOOSH_HPP
-#define FWOOSH_HPP
+#pragma once
 
 #include <iostream>
 #include "ASpell.hpp"
@@ -12,4 +11,3 @@ class   Fwoosh : public ASpell
         virtual Fwoosh *clone() const;
 };
 
-#endif

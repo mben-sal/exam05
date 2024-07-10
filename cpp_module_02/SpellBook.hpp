@@ -1,5 +1,4 @@
-#ifndef SPELLBOOK_HPP
-#define SPELLBOOK_HPP
+#pragma once
 
 #include <iostream>
 #include <map>
@@ -16,5 +15,3 @@ class   SpellBook
         void forgetSpell(std::string const &obj);
         ASpell* createSpell(std::string const &obj);
 };
-
-#endif

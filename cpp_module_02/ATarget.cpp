@@ -1,6 +1,6 @@
 #include "ATarget.hpp"
 
-ATarget::ATarget(std::string type)
+ATarget::ATarget(std::string const &type)
 {
     _type = type;
 }
@@ -9,7 +9,7 @@ ATarget::~ATarget()
 {
 }
 
-const std::string &ATarget::getType() const
+std::string const &ATarget::getType() const
 {
     return (_type);
 }
